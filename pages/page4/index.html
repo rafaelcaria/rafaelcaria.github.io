@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Rafael's Blog</title>
+    <!-- For all browsers -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+  </head>
+
+  <body class="layout--home">
+    <nav class="skip-links">
+      <ul>
+        <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+        <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+        <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+      </ul>
+    </nav>
+    <!-- navbar -->
+    <div class="masthead">
+      <div class="masthead__inner-wrap">
+        <div class="masthead__menu">
+          <nav id="site-nav" class="greedy-nav">
+            <a class="site-title" href="/"> Rafael's Blog </a>
+            <ul class="visible-links">
+              <li class="masthead__menu-item">
+                <a href="/about">About</a>
+              </li>
+              <li class="masthead__menu-item">
+                <a href="/categories">Categories</a>
+              </li>
+              <li class="masthead__menu-item">
+                <a href="/tags">Tags</a>
+              </li>
+            </ul>   
+            <button class="greedy-nav__toggle hidden" type="button">
+              <span class="visually-hidden">Toggle menu</span>
+              <div class="navicon"></div>
+            </button>
+            <ul class="hidden-links hidden"></ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- nav -->
+    <div class="initial-content">
+      <div id="main" role="main"> 
+        <div class="sidebar sticky">
+          <div itemscope itemtype="https://schema.org/Person">  
+            <div class="author__avatar">
+              <img src="/src/img.jpg" alt="0xRick" itemprop="image">
+            </div>
+  
+            <div class="author__content">
+              <h3 class="author__name" itemprop="name">Rafael Caria</h3>
+              <div class="author__bio" itemprop="description">
+              </div>
+            </div>
+
+            <div class="author__urls-wrapper">
+              <button class="btn btn--inverse">Follow</button>
+              <ul class="author__urls social-icons">
+                <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+                  <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Somewhere between 1's and 0's</span>
+                </li>
+                <li><a href="/" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-home" aria-hidden="true"></i><span class="label">Home Page</span></a></li>
+                <li><a href="https://github.com/rafaelcaria" rel="noopener noreferrer" target="_blank"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">Github</span></a></li>
+                <li><a href="https://www.linkedin.com/in/rafael-caria-000839182/" rel="noopener noreferrer" target="_blank"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">Linkedin</span></a></li>  
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="archive">
+          <h1 id="page-title" class="page__title"></h1>
+          <h3 class="archive__subtitle">Recent Posts</h3>
+          <div class="entries-list">
+            <div class="list__item">
+              <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+                <h2 class="archive__item-title no_toc" itemprop="headline">
+                  <a href="/pentest/" rel="permalink">Title 7</a>
+                </h2>
+
+                <p class="page__meta">
+                  <span class="page__meta-date">
+                    <i class="far fa-calendar-alt" aria-hidden="true"></i>
+                    <time datetime="2021-10-29T03:00:00+02:00">December 25, 2021</time>
+                  </span>
+                  <span class="page__meta-sep"></span>
+                  <span class="page__meta-readtime">
+                    <i class="far fa-clock" aria-hidden="true"></i>
+                      28 minute read
+                  </span>
+                </p>
+                <p class="archive__item-excerpt" itemprop="description">Conteudo
+                </p>
+              </article>
+            </div>
+
+            <div class="list__item">
+              <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+                <h2 class="archive__item-title no_toc" itemprop="headline">
+                  <a href="/" rel="permalink">Title 8</a>
+                </h2>
+
+                <p class="page__meta">
+                  <span class="page__meta-date">
+                    <i class="far fa-calendar-alt" aria-hidden="true"></i>
+                    <time datetime="2021-10-29T03:00:00+02:00">December 25, 2021</time>
+                  </span>
+                  <span class="page__meta-sep"></span>
+                  <span class="page__meta-readtime">
+                    <i class="far fa-clock" aria-hidden="true"></i>
+                      28 minute read
+                  </span>
+                </p>
+                <p class="archive__item-excerpt" itemprop="description">Conteudo
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <nav class="pagination">
+            <ul>
+              <li><a href="/pages/page3/"><span aria-hidden="true">Previous</span></a></li>
+              <li><a href="/">1</a></li>
+              <li><a href="/pages/page2/">2</a></li>
+              <li><a href="/pages/page3/">3</a></li>
+              <li><a href="#" class="disabled">…</a></li>
+              <li><a href="/pages/page4/" class="disabled current">4</a></li>
+              <li><a href="#" class="disabled">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div id="footer" class="page__footer">
+      <footer>
+        <div class="page__footer-follow">
+          <ul class="social-icons">
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="/assets/js/main.min.js"></script>
+  </body>
+</html>
